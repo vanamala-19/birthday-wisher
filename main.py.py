@@ -6,8 +6,8 @@ os.chdir(r"C:\\Users\\vanam\\OneDrive\\Desktop\\Python_Projects\\birthday_wisher
 # os.mkdir("testing") 
 
 # Enter your authentication details
-GMAIL_ID = '187r1a0354@gmail.com'
-GMAIL_PSWD = 'yeshudarling'
+GMAIL_ID = 'user_email@gmail.com'
+GMAIL_PSWD = 'user_password'
 
 # funtion which sends the email
 def sendEmail(to, sub, msg):
@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
             if(item['Email'] != "not given"):
                 sendEmail(item['Email'], "Happy Birthday", item['Dialogue']) 
-            sendEmail("vanamalashivaji19@gmail.com", "Oye Its Birthday Of", item['Name'])
+            sendEmail("user_email@gmail.com", "Oye Its Birthday Of", item['Name'])
             writeInd.append(index)
 
     # for writing year in excel and to stop msg spam
